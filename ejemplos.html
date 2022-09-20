@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/icono.png">
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylo.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./image/logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./ejemplos.html">Ejemplos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class="titulo">
+            <h1>Ejemplos</h1>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>
+              Para asignarle una característica a un elemento, simplemente debemos informar la clase correspondiente en la propiedad “class” del elemento que será estilizado, como mostramos e el siguiente ejemplo:
+              En este ejemplo, fue asignado el contenido "rounded-sm" para una propiedad de imagen. Es un estilo que agrega bordes redondeados y no un elemento.
+              Por lo tanto, al cargar la imagen, se aplicarán al elemento las características que se refieren a esta clase.
+            </h4>
+          </div>
+               <div>
+                   <img src="./image/img2.jpg" alt="">
+               </div>
+                <div>
+                  <h2> ¿Cuál es la funcionalidad de Bootstrap?</h2>
+                   Bootstrap ofrece una serie de características que se pueden implementar en un sitio web. A continuación hablaremos de las posibilidades de esta herramienta.
+                   Diseño responsive
+                   Una de las características principales de Bootstrap es permitir que la adaptación de la página se realice según el tipo de dispositivo utilizado. Para garantizar la responsividad, el framework funciona con:
+                   <hb>
+                  <ul>
+                      <li> la estilización del elemento <div></li>
+                      <li> el uso del class container</li>
+                  </ul>
+                   <hb>
+                    En la práctica, el elemento <div>, funciona para crear una serie de notas, similar a una tabla, capaz de estructurar la página de forma adaptable.
+                    El elemento <div> es más flexible, ya que permite definir y cambiar el tamaño de la longitufácilmente.
+                    Ya hubo un intento de utilizar tablas para crear diseños responsivos, sin embargo existíalimitaciones para definir la longitud de las columnas lo que hizo imposible su uso edispositivos más pequeños, como smartphones.
+                    Bootstrap le ha asignado al elemento <div> una característica de class container, que funcionpara determinar las dimensiones apropiadas para los elementos insertados en ese espacio.
+                    Básicamente, o framework funciona con tres tipos de containers:
+                      <ul>
+                        <li>Container: como un conjunto con una propiedad de ancho máximo, que determina qué tamade tela es ideal para crear el diseño de página</li>
+                        <li>Container-fluid: considera la longitud total de la tela del dispositivo para definir diseño. Para esto, se considera la propiedad width —100% en todos los límites de tamaño tela</li>
+                        <li>Container-{ breakpoint}: considera width —100% hasta alcanzar un cierto tamaño</li>
+                      </ul>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-3 bg-primary">
+                   <h2>Biblioteca de componentes</h2>
+                   Otra interesante función de este framework es la cantidad de componentes que pueden ser usados para proporcionar una mejor interacción y perfeccionar la comunicación con el usuario.
+                   Enseguida mencionaremos los principales.
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 bg-light">
+                   <h3>Alertas</h3>
+                   O Bootstrap permite una configuración simple y rápida de diferentes tipos de alertas, con colores específicos, según la situación.
+                   Para mostrarle al usuario un alerta que indique atención, por ejemplo, simplemente debemos usar .alert-danger y aparecerá un cuadro de texto con un fondo rojo:
+                   ¡Atención! ¡Cuidado mensaje de alerta!
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 bg-warning">
+                   <h3>Carrusel</h3>
+                   Un componente ampliamente utilizado en Bootstrap es el Carrusel, una presentación de diapositivas, es decir, una herramienta que permite la visualización de imágenes de manera receptiva.
+                   También permite la inclusión de efectos especiales para la transición de imágenes y controles de visualización, como por ejemplo los indicadores de “siguiente” y “anterior”.
+                </div>
+                 <div class="col-xs-12 col-md-6 col-lg-3 bg-secondary">
+                   <h3>Barra de navegación</h3>
+                   Otro poderoso componente de la estructura es la NavBar (barra de navegación), que permite la construcción de un sistema de navegación sensible.
+                   Es posible configurar diferentes formas de presentar el menú, elegir entre posicionamiento lateral o superior y, también, definir una forma de visualización que se pueda extender o contraer.
+                   También es posible determinar cómo mostrar los enlaces del menú, que pueden ser en forma de botón, enlace, menú suspenso, entre otras configuraciones, para facilitar la implementación de la navegación del sitio.
+                   </h3>
+                 </div>
+             </div>
+        </div>
+        <div class="footer">
+            <img src="./image/logo.png" alt="">    
+        </div>
+    </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
